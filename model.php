@@ -11,7 +11,7 @@ class Database
     try {
         return new PDO($this->host, $this->user, $this->password);
     } catch (PDOException $e) {
-        die('erreur:'.$e->getMessage());
+        die('erreur:' . $e->getMessage());
     }
 }
     public function create(string $customer, string $cashier, int $amount, int $received, int $returned, string $state)
